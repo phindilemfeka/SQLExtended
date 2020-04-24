@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa73f96b-a983-4f92-b5bc-71c24946e3d5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aFwfV7RVyID3RwuONhjKLYczSW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/postgresql-42.2.12.jre6.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SQLExtended">
+    <configuration name="SQLExtended" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SQLExtended" />
+      <module name="SQLExtended.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="postgresql-42.2.12.jre7.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/library/postgresql-42.2.12.jre7.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SQLExtended" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa73f96b-a983-4f92-b5bc-71c24946e3d5" name="Default Changelist" comment="" />
+      <created>1586344752880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586344752880</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="186" width="806" height="674" key="#Project_Structure" timestamp="1586365281308">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="555" y="186" width="806" height="674" key="#Project_Structure/0.0.1920.1047@0.0.1920.1047" timestamp="1586365281308" />
+    <state x="552" y="185" width="806" height="674" key="#Updates" timestamp="1587560231298">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="552" y="185" width="806" height="674" key="#Updates/0.0.1920.1047@0.0.1920.1047" timestamp="1587560231298" />
+    <state x="1149" y="175" width="578" height="694" key="#postgresql-42.2.12.jre7.jar" timestamp="1586359380312">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="1149" y="175" width="578" height="694" key="#postgresql-42.2.12.jre7.jar/0.0.1920.1047@0.0.1920.1047" timestamp="1586359380312" />
+    <state x="1221" y="280" width="643" height="481" key="FileChooserDialogImpl" timestamp="1586365272601">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="1221" y="280" width="643" height="481" key="FileChooserDialogImpl/0.0.1920.1047@0.0.1920.1047" timestamp="1586365272601" />
+    <state width="1878" height="266" key="GridCell.Tab.0.bottom" timestamp="1587520657055">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1587520657055" />
+    <state width="1878" height="266" key="GridCell.Tab.0.center" timestamp="1587520657053">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="266" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1587520657053" />
+    <state width="1878" height="266" key="GridCell.Tab.0.left" timestamp="1587520657051">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="266" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1587520657051" />
+    <state width="1878" height="266" key="GridCell.Tab.0.right" timestamp="1587520657053">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="266" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1587520657053" />
+    <state x="859" y="25" key="SettingsEditor" timestamp="1586364781184">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="859" y="25" key="SettingsEditor/0.0.1920.1047@0.0.1920.1047" timestamp="1586364781184" />
+    <state x="643" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1587723620131">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="643" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1047@0.0.1920.1047" timestamp="1587723620131" />
+    <state x="376" y="140" width="1163" height="767" key="new project wizard" timestamp="1586895166077">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="376" y="140" width="1163" height="767" key="new project wizard/0.0.1920.1047@0.0.1920.1047" timestamp="1586895166077" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1586348216566">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1047@0.0.1920.1047" timestamp="1586348216566" />
+  </component>
+</project>
