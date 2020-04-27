@@ -1,0 +1,17 @@
+Part 2: Querying a database 
+
+1.SELECT ALL records from table Customers.
+
+2.SELECT records only from the name column in the Customers table.
+
+3.Show the name of the Customer whose CustomerID is 1.
+
+4.UPDATE the record for CustomerID = 1 on the Customer table so that the name is “Lerato Mabitso”.
+
+5.DELETE the record from the Customers table for customer 2 (CustomerID = 2).
+
+6.Select all unique statuses from the Orders table and get a count of the number of orders for each unique status.
+
+7.Return the MAXIMUM payment made on the PAYMENTS table.
+
+

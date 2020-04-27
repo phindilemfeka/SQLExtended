@@ -1,0 +1,7 @@
+-classpath '/home/phindile/IdeaProjects/SQLExtended/build/classes/java/main:/home/phindile/IdeaProjects/SQLExtended/build/resources/main'
+-d '/home/phindile/IdeaProjects/SQLExtended/build/docs/javadoc'
+-doctitle 'SQLExtended 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'SQLExtended 1.0-SNAPSHOT API'
+'/home/phindile/IdeaProjects/SQLExtended/src/main/java/SQLExtended.java'
+'/home/phindile/IdeaProjects/SQLExtended/src/main/java/Main.java'

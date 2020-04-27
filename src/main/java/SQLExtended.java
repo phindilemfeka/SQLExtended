@@ -28,29 +28,29 @@ public class SQLExtended {
         }
 
         ResultSet results;
-        String query1 ="SELECT * FROM Customers";
+        String query1 = "SELECT * FROM customers";
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query1);
 
-        if (connect!=null){
+        try {
+          results = ps.executeQuery();
+           while (results.next()){
+               String getResult = results.getString("1. ");
+               System.out.println(getResult);
+           }
 
-            try {
-              results = connect.createStatement().executeQuery(query1);
-               while (results.next()){
-                   String getResult = results.getString("1");
-                   System.out.println(getResult);
-               }
+           connect.close();
+           results.close();
 
-               connect.close();
-               results.close();
-
-
-            }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
-            }
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
+
 
     public static void sql2() throws SQLException {
 
@@ -64,29 +64,26 @@ public class SQLExtended {
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELECT FirstName FROM Customers";
 
-        if (connect!=null){
+        String query1 ="SELECT FirstName FROM customers";
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("2");
-                    System.out.println(getResult);
-                }
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query1);
 
-                connect.close();
-                results.close();
-
-
-            }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
+        try {
+            ResultSet results;
+            results = connect.createStatement().executeQuery(query1);
+            while (results.next()){
+                String getResult = results.getString("2. ");
+                System.out.println(getResult);
             }
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
     public static void sql3() throws SQLException {
 
@@ -100,67 +97,66 @@ public class SQLExtended {
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELECT FirstName FROM Customers WHERE customerid =1";
 
-        if (connect!=null){
+        String query3 ="SELECT FirstName FROM customers WHERE customerid =1";
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query3);
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("1");
-                    System.out.println(getResult);
-                }
-
-                connect.close();
-                results.close();
-
-
+        try {
+            ResultSet results;
+            results = ps.executeQuery();
+            while (results.next()){
+                String getResult = results.getString("3. ");
+                System.out.println(getResult);
             }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
-            }
+
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
 
 
     public static void sql4() throws SQLException {
 
         Connection connect = null;
+
         try {
             //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
             connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
         }
+
         catch (SQLException e) {
             System.out.println("Unable to create connection");
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELE";
 
-        if (connect!=null){
+        String query4 ="UPDATE FROM customers " +
+                        "SET FirstName = Lerato Mabitso" +
+                        "WHERE customerid = 1";
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("1");
-                    System.out.println(getResult);
-                }
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query4);
 
-                connect.close();
-                results.close();
+        try {
+            ResultSet results;
+            results = ps.executeQuery();
 
-
-            }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
+            while (results.next()){
+                String getResult = results.getString("4. ");
+                System.out.println(getResult);
             }
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
 
     public static void sql5() throws SQLException {
@@ -175,29 +171,30 @@ public class SQLExtended {
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELECT * FROM Customers";
+        String query5 ="DELETE (*) FROM customers" +
+                       "WHERE customerid = 2";
 
-        if (connect!=null){
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query5);
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("1");
-                    System.out.println(getResult);
-                }
-
-                connect.close();
-                results.close();
-
-
+        try {
+            ResultSet results;
+            results = ps.executeQuery();
+            while (results.next()){
+                String getResult = results.getString("5. ");
+                System.out.println(getResult);
             }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
-            }
+
+            connect.close();
+            results.close();
+
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
     public static void sql6() throws SQLException {
 
@@ -211,29 +208,29 @@ public class SQLExtended {
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELECT * FROM Customers";
 
-        if (connect!=null){
+        String query6 ="SELECT DISTINCT status FROM orders";
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query6);
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("1");
-                    System.out.println(getResult);
-                }
-
-                connect.close();
-                results.close();
-
-
+        try {
+            ResultSet results;
+            results = connect.createStatement().executeQuery(query6);
+            while (results.next()){
+                String getResult = results.getString("6. ");
+                System.out.println(getResult);
             }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
-            }
+
+            connect.close();
+            results.close();
+
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
     public static void sql7() throws SQLException {
 
@@ -247,29 +244,25 @@ public class SQLExtended {
             e.printStackTrace();
         }
 
-        ResultSet results;
-        String query1 ="SELECT * FROM Customers";
 
-        if (connect!=null){
+        String query7 ="SELECT MAX(amount) FROM payments";
+        assert connect != null;
+        PreparedStatement ps = connect.prepareStatement(query7);
 
-            try {
-                results = connect.createStatement().executeQuery(query1);
-                while (results.next()){
-                    String getResult = results.getString("1");
-                    System.out.println(getResult);
-                }
-
-                connect.close();
-                results.close();
-
-
-            }
-            catch (Exception e){
-                System.out.println("You got an exception");
-                System.out.println(e.getMessage());
+        try {
+            ResultSet results;
+            results = connect.createStatement().executeQuery(query7);
+            while (results.next()){
+                String getResult = results.getString("7. ");
+                System.out.println(getResult);
             }
 
         }
+        catch (Exception e){
+            System.out.println("You got an exception");
+            System.out.println(e.getMessage());
+        }
+
     }
 
 
