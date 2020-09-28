@@ -54,17 +54,6 @@ public class SQLExtended {
 
     public static void sql2() throws SQLException {
 
-        Connection connect = null;
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
-
-
         String query1 ="SELECT FirstName FROM customers";
 
         assert connect != null;
@@ -86,17 +75,6 @@ public class SQLExtended {
 
     }
     public static void sql3() throws SQLException {
-
-        Connection connect = null;
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
-
 
         String query3 ="SELECT FirstName FROM customers WHERE customerid =1";
         assert connect != null;
@@ -121,19 +99,6 @@ public class SQLExtended {
 
 
     public static void sql4() throws SQLException {
-
-        Connection connect = null;
-
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
-
 
         String query4 ="UPDATE FROM customers " +
                         "SET FirstName = Lerato Mabitso" +
@@ -160,16 +125,6 @@ public class SQLExtended {
     }
 
     public static void sql5() throws SQLException {
-
-        Connection connect = null;
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
 
         String query5 ="DELETE (*) FROM customers" +
                        "WHERE customerid = 2";
@@ -198,17 +153,6 @@ public class SQLExtended {
     }
     public static void sql6() throws SQLException {
 
-        Connection connect = null;
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
-
-
         String query6 ="SELECT DISTINCT status FROM orders";
         assert connect != null;
         PreparedStatement ps = connect.prepareStatement(query6);
@@ -233,17 +177,6 @@ public class SQLExtended {
 
     }
     public static void sql7() throws SQLException {
-
-        Connection connect = null;
-        try {
-            //Creating connection ("jdbc:postgresql"//hostname:port/dbname","username","password");
-            connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Umuzi","posttgres","Tuks@2018");
-        }
-        catch (SQLException e) {
-            System.out.println("Unable to create connection");
-            e.printStackTrace();
-        }
-
 
         String query7 ="SELECT MAX(amount) FROM payments";
         assert connect != null;
